@@ -1,0 +1,67 @@
+body {
+	font-family: sans-serif;
+	color: black;
+
+	margin: 0;
+	padding: 0;
+
+	background: #f2f2f2;
+}
+
+header {
+	text-align: center;
+}
+
+h1 {
+	font-size: 42px;
+	margin: 50px 0;
+	color: #E6175C;
+	font-weight: 400;
+}
+
+section {
+	padding: 50px 0;
+}
+
+.container {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.iphoneFond {
+	background: url(../_img/iphone6.svg);
+	width: 414px;
+	height: 868px;
+	position: relative;
+	display: inline-block;
+}
+
+.iphoneContainer {
+	width: 375px;
+	height: 667px;
+	position: absolute;
+	
+	top: 93px;
+	left: 19px;
+	overflow: hidden;
+}
+
+animation1screen {
+	display: block;
+	overflow: hidden;
+}
+
+.text {
+padding-right: 100px;
+	width: 450px;
+	float: right;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+h2 {
+	margin-top: 95px;
+	font-size: 26px;
+	color: #E6175C;
+	line-height: 1.8;
+}

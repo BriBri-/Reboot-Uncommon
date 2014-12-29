@@ -1,0 +1,55 @@
+.animation1screen {
+	display: block;
+	background: #f2f2f2;
+}
+
+.loading{
+	margin: 0 90px;
+	margin-top: 200px;
+
+	-webkit-animation: loadingFrames ease-in-out 4s infinite;
+	-webkit-transform-origin: 50% 69px;
+}
+
+@-webkit-keyframes loadingFrames {
+	0% {
+		-webkit-transform:  rotate(0deg) ;
+	}
+	20% {
+		-webkit-transform:  rotate(-215deg) ;
+	}
+	40% {
+		-webkit-transform:  rotate(-60deg) ;
+	}
+	60% {
+		-webkit-transform:  rotate(-304deg) ;
+	}
+	80% {
+		-webkit-transform:  rotate(115deg) ;
+	}
+	100% {
+		-webkit-transform:  rotate(0deg) ;
+	}
+}
+
+.fadeinelement{
+	-webkit-animation: fadeIn ease-in 5s;
+	-webkit-animation-iteration-count: 1;
+	color: #E6175C;
+	text-align: center;
+	font-size: 16px;
+	position: relative;
+	top: -20px;
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity:0;
+	}
+	10% {
+		opacity:0;
+	}
+	25% {
+		opacity:1;
+	}
+}
