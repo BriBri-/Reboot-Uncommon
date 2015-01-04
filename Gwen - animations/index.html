@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 
-		<title>Animations — Reboot Factory</title>
+		<title>Animations — Uncommon</title>
 		<meta charset="UTF-8" />
 		
 		<link rel="stylesheet"  href="_styles/reset.css">
@@ -16,6 +16,7 @@
 	</head>
 
 	<body>
+			<div class="container">
 
 		<header>
 
@@ -25,7 +26,6 @@
 
 		<main>
 
-			<div class="container">
 
 				<section class="animation1">
 		
@@ -48,6 +48,9 @@
 					<div class="text">
 				
 						<h2>Recherche 1</h2>
+
+						<p>Animation pouvant être utilisée lors de temps de chargement ou au lancement de l'application. Elle rappelle son objectif.</p>
+
 				
 			
 					</div>
@@ -83,6 +86,8 @@
 				
 						<h2>Recherche 2</h2>
 						
+						<p>Animation pouvant être utilisée lors de temps de chargement ou au lancement de l'application. Elle rappelle son objectif.</p>
+						
 					</div>
 			
 				</section>
@@ -102,11 +107,11 @@
 					
 								<div class="animation3screen">
 
-									<img class="heartright2" src="./_img/loading3.svg" />
+									<img id="heartright2" class="runanimation-hr2" src="./_img/loading3.svg" />
 
-									<img class="heartleft2" src="./_img/loading2.svg" />
+									<img id="heartleft2" class="runanimation-hl2" src="./_img/loading2.svg" />
 
-									<p class="fadeinelement2">uncommon</p>
+									<p id="fadeinelement2" class="runanimation-fi2">uncommon</p>
 
 								</div>
 
@@ -118,9 +123,12 @@
 
 					<div class="text">
 				
-						<h2>Recherche</h2>
-				
-			
+						<h2>Nom de l'application</h2>
+						
+						<p>Animation pouvant être placée au démarrage de l'application, laissant apparaître son nom.</p>
+						
+						<button id="rejouer">Rejouer</button>
+						
 					</div>
 
 				</section>
@@ -177,6 +185,8 @@
 					<div class="text">
 				
 						<h2>Choix de catégorie 1</h2>
+
+						<p>Animation d'une sélection de catégories, pour afficher les résultats. Elle présente les différents éléments dans un espace en ligne : on progresse vers la droite, on revient en arrière vers la gauche.</p>
 				
 			
 					</div>
@@ -228,19 +238,51 @@
 					<div class="text">
 					
 						<h2>Choix de catégorie 2</h2>
-					
+
+						<p>Animation d'une sélection de catégories, pour afficher les résultats. Chaque bouton déroule son contenu.</p>
+
 				
 					</div>
 	
 				</section>
 
-			</div>
 	
 		</main>
+		
+		<footer>
+		
+		<p>Réalisé par Gwenaël Bierlier pour l'application Uncommon dans le cadre de Reboot Factory</p>
+		
+		</footer>
 
+	</div>
 
 	<script src="_js/jquery-1.11.1.min.js"></script>
 	<script src="_js/main.js"></script>
+
+	<script>
+
+		//bouton rejouer animation 3
+
+		$('#rejouer').on('click', function(){
+		    var heading = $('#heartright2').clone().removeClass();
+		    $('#heartright2').remove();
+		    $('.animation3screen').append(heading);
+		    $('#heartright2').addClass('runanimation-hr2');
+
+		    var heading = $('#heartleft2').clone().removeClass();
+		    $('#heartleft2').remove();
+		    $('.animation3screen').append(heading);
+		    $('#heartleft2').addClass('runanimation-hl2');
+
+		    var heading = $('#fadeinelement2').clone().removeClass();
+		    $('#fadeinelement2').remove();
+		    $('.animation3screen').append(heading);
+		    $('#fadeinelement2').addClass('runanimation-fi2');
+
+		});
+	
+	</script>
 
 	</body>
 
