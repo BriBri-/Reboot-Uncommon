@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 
-		<title>Compte — Prototype</title>
+		<title>Compte Parametres — Prototype</title>
 		<meta charset="UTF-8" />
 		
 		<link rel="stylesheet"  href="_styles/reset.css">
@@ -19,21 +19,21 @@
 				<h1>Nom d'utilisateur</h1>
 				
 			</div>
-			
-			<main>
-
 				<div class="segmentedcontrol">
 					
-						<button><a href="favoris.html" class="segmentedfavoris">Favoris</a></button>
-						<button><a href="parametres.html" class="segmentedparametres segmentedactive">Paramètres</a></button>
+						<a href="favoris.html" class="segmentedfavoris">Favoris</a>
+						<a href="parametres.html" class="segmentedparametres segmentedactive">Paramètres</a>
 
 				</div>
+			
+			<main class="parametres">
 
-				<button><a href="#">Modifier nom</a></button>
-				<button><a href="#">Modifier mot de passe</a></button>
-				<button><a href="#">Se déconnecter</a></button>
 
-				<button class="supprimer"><a href="#">Supprimer compte</a></button>
+				<a class="parametresbutton" href="#">Modifier nom</a>
+				<a class="parametresbutton" href="#">Modifier mot de passe</a>
+				<a class="parametresbutton" href="#">Se déconnecter</a>
+
+				<a class="parametresbutton supprimer" href="#">Supprimer compte</a>
 
 			</main>
 
@@ -41,9 +41,9 @@
 
 					<li><a href="#" class="amenu">Explorer</a></li>
 					<li><a href="#" class="amenu">Localiser</a></li>
-					<li><a href="#" class="amenu active">Compte</a></li>
+					<li><a href="favoris.html" class="amenu active">Compte</a></li>
 
-				</div>
+				</ol>
 
 		</div>
 

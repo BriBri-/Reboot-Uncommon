@@ -11,45 +11,7 @@ body {
 	height: 667px;
 
 	background: #f2f2f2;
-
 	position: relative;
-}
-
-.logo {
-	background: #cd1751;
-
-	width: 100px;
-	height: 100px;
-
-	position: absolute;
-	top: 200px;
-	left: 137px;
-}
-
-.baseline {
-	color: #cd1751;
-	
-	position: relative;
-	top: 320px;
-	
-	text-align: center;
-	font-size: 16px;
-
-	width: 220px;
-	margin: 0 auto;
-	
-	line-height: 1.4;
-}
-
-.top {
-	height: 44pt;
-}
-
-.top h1 {
-	font-size: 24px;
-	text-align: center;
-	padding: 25px;
-	font-weight: 300;
 }
 
 .tabBar li {
@@ -94,17 +56,127 @@ body {
 	bottom: 0;
 }
 
-button a {
+
+/* C H A R G E M E N T */
+.logo {
+	background: #cd1751;
+
+	width: 100px;
+	height: 100px;
+
+	position: absolute;
+	top: 200px;
+	left: 137px;
+}
+
+.baseline {
+	position: relative;
+	top: 320px;
+	
+	color: #cd1751;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.4;
+
+	width: 220px;
+	margin: 0 auto;
+}
+
+
+/* C O M P T E */
+main {
+	height: 502px;
+	position: relative;
+}
+
+.top {
+	height: 44pt;
+}
+
+.top h1 {
+	font-size: 24px;
+	text-align: center;
+	padding: 25px;
+	font-weight: 300;
+}
+
+.segmentedcontrol {
+	width: 375px;
+	overflow: hidden;
+	position: relative;
+	height: 50px;
+	text-align: center;
+
+}
+
+.segmentedcontrol a {
+	color: white;
+	text-decoration: none;
+	background: #E6175C;
+}
+
+.segmentedcontrol a:nth-child(1) {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	
+	border-radius: 3px 0 0 3px;
+	left: 10px;
+	
+	margin: 0;
+	padding: 5px;
+	width: 170px;
+}
+
+.segmentedcontrol a:nth-child(2) {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+
+	border-radius: 0 3px 3px 0;
+
+	margin: 0;
+	padding: 5px;
+	width: 170px;
+}
+
+.segmentedcontrol > .segmentedactive{
+	background: #cd1751;
+}
+
+
+/* P A R A M E T R E S */
+.parametresbutton {
 	text-decoration: none;
 	color: white;
 	
+	margin: 0 10px;
+	margin-top: 10px;
+	
+	border-radius: 4px;
+	text-align: center;
+	
 	display: block;
+	background: #E6175C;
 
 	padding: 20px 0;
-	width: 345px;
+	width: 355px;
 }
 
-button {
+.parametresbutton:nth-child(1) {
+	margin-top: 0px;
+}
+
+
+.supprimer {
+	position: relative;
+	top: 230px;
+	background:#cd1751;
+}
+
+
+/* F A V O R I S */
+.resultat a {
 	background: #E6175C;
 	border-radius: 4px;
 	border: 0;
@@ -115,59 +187,6 @@ button {
 	
 	font-size: 16px;
 	color: white;
-}
-
-main {
-	height: 502px;
-	position: relative;
-}
-
-.segmentedcontrol {
-	width: 375px;
-	overflow: hidden;
-	position: relative;
-	height: 50px;
-}
-
-.segmentedcontrol button {
-	background: #E6175C;
-}
-
-.segmentedcontrol button:nth-child(1) {
-	position: absolute;
-	left: 10px;
-	top: 10px;
-	
-	border-radius: 3px 0 0 3px;
-	left: 10px;
-	
-	margin: 0;
-	padding: 0;
-}
-
-.segmentedcontrol button:nth-child(2) {
-	position: absolute;
-	right: 10px;
-	top: 10px;
-
-	border-radius: 0 3px 3px 0;
-
-	margin: 0;
-	padding: 0;
-}
-
-.segmentedactive {
-	background: #cd1751;
-}
-
-.segmentedparametres {
-	padding: 5px;
-	width: 170px;
-}
-
-.segmentedfavoris {
-	padding: 5px;
-	width: 170px;
 }
 
 .resultat {
@@ -192,10 +211,4 @@ main {
 	position: absolute;
 	
 	border-radius: 50%;
-}
-
-.supprimer {
-	position: relative;
-	top: 190px;
-	background:#cd1751;
 }
