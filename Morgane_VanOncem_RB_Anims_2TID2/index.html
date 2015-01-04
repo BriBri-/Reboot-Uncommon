@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+	<title>Morgane Van Oncem - Animations</title>
+	<meta charset="UTF-8" />
+
+	<link rel="stylesheet" href="_styles/style.css" />
+	<link rel="stylesheet" href="_styles/anim.css" />
+
+</head>
+
+<body>
+	<h1>Bibliothèque d'animations</h1>
+
+	<h2>Apparition du pop up</h2>
+	<p>Cette animation sera située sur la fichie descriptive de chaque lieu, lorsque vous cliquez sur "évaluer ce lieu", le pop up apparait.</p>
+
+		<div class="telephone">
+			<button id="button">Evaluer ce lieu</button>
+			<div class="menu">
+				<div class="menu1">Menu1</div>
+				<div class="menu2">Menu2</div>
+				<div class="menu3">Menu3</div>
+			</div>
+			<div id="opacite_un"></div>
+			<div id="popup_un"></div>
+		</div>
+
+	<h2>Etoiles de vote</h2>
+	<p>Dans ce cas deux solutions sont proposées:</p>
+	<p>Pour la première solution: sélectionnez directement le nombre d'étoiles que vous désirez assigner au lieu</p>
+
+		<div class="telephone">
+			<button class="buttonvoter">Evaluer ce lieu</button>
+			<div class="menu">
+				<div class="menu1">Menu1</div>
+				<div class="menu2">Menu2</div>
+				<div class="menu3">Menu3</div>
+			</div>
+			<div class="opacite"></div>
+			<div class="popup_deux">
+				<div id="etoilessimple__un" class="etoilessimple"></div>
+				<div id="etoilessimple__deux" class="etoilessimple"></div>
+				<div id="etoilessimple__trois" class="etoilessimple"></div>
+			</div>
+		</div>
+
+	<p>Pour la seconde solution: sélctionnez les étoiles une par une jusqu'a atteindre le nombre total d'étoiles que vous désirez assigner au lieu.</p>
+
+		<div class="telephone">
+			<button class="buttonvoter">Evaluer ce lieu</button>
+			<div class="menu">
+				<div class="menu1">Menu1</div>
+				<div class="menu2">Menu2</div>
+				<div class="menu3">Menu3</div>
+			</div>
+			<div class="opacite"></div>
+			<div class="popup_deux">
+				<div id="etoilessimple__2un" class="etoilessimple"></div>
+				<div id="etoilessimple__2deux" class="etoilessimple"></div>
+				<div id="etoilessimple__2trois" class="etoilessimple"></div>
+			</div>
+		</div>
+	
+	<h2>Disparition du pop up</h2>
+	<p>Après avoir choisi le nombre d'étoiles assignées à un lieu, cliquez sur le bouton "valider mon vote" et le pop up disparait.</p>
+
+		<div class="telephone">
+			<div class="menu">
+				<div class="menu1">Menu1</div>
+				<div class="menu2">Menu2</div>
+				<div class="menu3">Menu3</div>
+			</div>
+			<div id="opacite_trois"></div>
+			<div id="popup_trois">
+				<button id="buttonvoter_trois">Valider mon vote</button>
+		
+			</div>
+		</div>
+
+	<h2>Choix d'une catégorie</h2>
+	<p>Losque vous cliquez sur une catégorie de lieux insolites, les réslutats apparaissent directement</p>
+		<div class="telephone">
+
+		<div class="menu">
+			<div class="menu1">Menu1</div>
+			<div class="menu2">Menu2</div>
+			<div class="menu3">Menu3</div>
+		</div>
+
+		<section>
+			<div id="categories__un">
+				<div class="icone-cat"></div>
+				<h2 class="titre_cat">Catégorie 1</h2>
+			</div>
+			<div id="categories__deux">
+				<div class="icone-cat"></div>
+				<h2 class="titre_cat">Catégorie 2</h2>
+			</div>
+			<div id="categories__trois">
+				<div class="icone-cat"></div>
+				<h2 class="titre_cat">Catégorie 3</h2>
+			</div>
+			<div id="categories__quatre">
+				<div class="icone-cat"></div>
+				<h2 class="titre_cat">Catégorie 4</h2>
+			</div>
+			<div id="categories__cinq">
+				<div class="icone-cat"></div>
+				<h2 class="titre_cat">Catégorie 5</h2>
+			</div>
+		</section>
+
+		<div id="apparait">
+			<div id="resultat__un">
+				<div class="icone_res"></div>
+				<h2 class="titre_res">Résultat</h2>
+			</div>
+			<div id="resultat__deux">
+				<div class="icone_res"></div>
+				<h2 class="titre_res">Résultat</h2>
+			</div>
+			<div id="resultat__trois">
+				<div class="icone_res"></div>
+				<h2 class="titre_res">Résultat</h2>
+			</div>
+		</div>
+	</div>
+
+	<h2>Switch entre "Description" et "Infos pratiques"</h2>
+	<p>Vous vous trouvez actuellement sur la fiche descriptive d'un lieu, afin de trouver les informations pratiques le concernant, cliquez sur le bouton "Infos pratiques"</p>
+
+		<div class="telephone">
+			<div class="menu">
+				<div class="menu1">Menu1</div>
+				<div class="menu2">Menu2</div>
+				<div class="menu3">Menu3</div>
+			</div>
+
+			<h1 class="titre_cinq">Nom du lieu</h1>
+			<div class="photo"></div>
+			<div class="boutons">
+				<div id="Bouton1"></div>
+				<div id="Bouton2"></div>
+				<div id="insolite">Insolite</div>
+				<div id="infospratiques">Infos Pratiques</div>
+			</div>
+			<div id="infos">
+				<p>Pouquoi ce lieu est-il insolite?</p>
+				<p>Voici diverses informations qui vous expliquent pourquoi le lieux que vous vous appretez à visiter est un lieu particulièrement insolite.</p>
+			</div>
+			<div id="infos_deux">
+				<p>Voici les informations pratiques concernant le lieu que vous souhaitez visiter:</p>
+				<p>Adresse</p>
+				<p>Adresse</p>
+				<p>Adresse</p>
+				<p>Heures d'ouvertures</p>
+				<p>Comment y accéder?</p>
+			</div>
+		</div>
+	
+	<script>
+		var button = document.getElementById("button");
+		var popup_un = document.getElementById("popup_un");
+		var opacite_un = document.getElementById("opacite_un");
+
+		button.addEventListener("click", function() {
+		popup_un.classList.toggle("popup_un");
+		});
+
+		button.addEventListener("click", function() {
+		opacite_un.classList.toggle("opacite_un");
+		});
+	</script>
+
+	<script>
+		var etoilesimple__un = document.getElementById("etoilessimple__un");
+		var etoilesimple__deux = document.getElementById("etoilessimple__deux");
+		var etoilesimple__trois = document.getElementById("etoilessimple__trois");
+
+		etoilessimple__un.addEventListener("click", function() {
+		etoilessimple__un.classList.toggle("etoilessimple__unfocus");
+		});
+
+		etoilessimple__deux.addEventListener("click", function() {
+		etoilessimple__un.classList.toggle("etoilessimple__unfocus");
+		etoilessimple__deux.classList.toggle("etoilessimple__deuxfocus");
+		});
+
+		etoilessimple__trois.addEventListener("click", function() {
+		etoilessimple__trois.classList.toggle("etoilessimple__troisfocus");
+		etoilessimple__deux.classList.toggle("etoilessimple__deuxfocus");
+		etoilessimple__un.classList.toggle("etoilessimple__unfocus");
+		});
+	</script>
+
+	<script>
+		var etoilesimple__2un = document.getElementById("etoilessimple__2un");
+		var etoilesimple__2deux = document.getElementById("etoilessimple__2deux");
+		var etoilesimple__2trois = document.getElementById("etoilessimple__2trois");
+
+		etoilessimple__2un.addEventListener("click", function() {
+		etoilessimple__2un.classList.toggle("etoilessimple__2unfocus");
+		});
+
+		etoilessimple__2deux.addEventListener("click", function() {
+		etoilessimple__2deux.classList.toggle("etoilessimple__2deuxfocus");
+		});
+
+		etoilessimple__2trois.addEventListener("click", function() {
+		etoilessimple__2trois.classList.toggle("etoilessimple__2troisfocus");
+		});
+	</script>
+
+	<script>
+		var button_trois = document.getElementById("buttonvoter_trois");
+		var popup_trois = document.getElementById("popup_trois");
+		var opacite_trois = document.getElementById("opacite_trois");
+	
+		button_trois.addEventListener("click", function() {
+		popup_trois.classList.toggle("popup_trois");
+		});
+
+		button_trois.addEventListener("click", function() {
+		opacite_trois.classList.toggle("opacite_trois");
+		});
+	</script>
+
+	<script>
+		var cat1 = document.getElementById("categories__un");
+		var cat2 = document.getElementById("categories__deux");
+		var cat3 = document.getElementById("categories__trois");
+		var cat4 = document.getElementById("categories__quatre");
+		var cat5 = document.getElementById("categories__cinq");
+		var res = document.getElementById("apparait");
+
+		cat3.addEventListener("click", function() {
+		cat3.classList.toggle("monte__trois");
+		cat1.classList.toggle("opacite_quatre");
+		cat2.classList.toggle("opacite_quatre");
+		cat4.classList.toggle("opacite_quatre");
+		cat5.classList.toggle("opacite_quatre");
+		res.classList.toggle("apparait");
+		});
+
+		cat1.addEventListener("click", function() {
+		cat3.classList.toggle("opacite_quatre");
+		cat2.classList.toggle("opacite_quatre");
+		cat4.classList.toggle("opacite_quatre");
+		cat5.classList.toggle("opacite_quatre");
+		res.classList.toggle("apparait");
+		});
+
+		cat2.addEventListener("click", function() {
+		cat2.classList.toggle("monte__deux");
+		cat1.classList.toggle("opacite_quatre");
+		cat3.classList.toggle("opacite_quatre");
+		cat4.classList.toggle("opacite_quatre");
+		cat5.classList.toggle("opacite_quatre");
+		res.classList.toggle("apparait");
+		});
+
+		cat4.addEventListener("click", function() {
+		cat4.classList.toggle("monte__quatre");
+		cat1.classList.toggle("opacite_quatre");
+		cat3.classList.toggle("opacite_quatre");
+		cat2.classList.toggle("opacite_quatre");
+		cat5.classList.toggle("opacite_quatre");
+		res.classList.toggle("apparait");
+		});
+	
+		cat5.addEventListener("click", function() {
+		cat5.classList.toggle("monte__cinq");
+		cat1.classList.toggle("opacite_quatre");
+		cat3.classList.toggle("opacite_quatre");
+		cat2.classList.toggle("opacite_quatre");
+		cat4.classList.toggle("opacite_quatre");
+		res.classList.toggle("apparait");
+		});
+	</script>
+
+		<script>
+		var btn1 = document.getElementById("Bouton1");
+		var btn2 = document.getElementById("Bouton2");
+		var insolite = document.getElementById("insolite");
+		var infosprat = document.getElementById("infospratiques");
+		var infos = document.getElementById("infos");
+		var infos_deux = document.getElementById("infos_deux");
+
+		btn2.addEventListener("click", function() {
+		btn1.classList.toggle("blanc");
+		btn2.classList.toggle("rose");
+		infosprat.classList.toggle("color-blanc");
+		insolite.classList.toggle("color-rose");
+		infos.classList.toggle("disparait_cinq");
+		infos_deux.classList.toggle("apparait_cinq");
+		});
+
+		btn1.addEventListener("click", function() {
+		btn1.classList.toggle("rosedeux");
+		btn2.classList.toggle("blanc");
+		});
+
+		btn1.addEventListener("click", function() {
+		btn1.classList.toggle("rosedeux");
+		btn2.classList.toggle("blanc");
+		});
+	</script>
+
+</body>
+</html>

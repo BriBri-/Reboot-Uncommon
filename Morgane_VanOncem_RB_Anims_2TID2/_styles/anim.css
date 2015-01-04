@@ -1,0 +1,562 @@
+
+/*APPARITION DU POP UP*/
+
+#button{
+	width: 100px;
+	height: 50px;
+	color: white;
+	background: #B01055;
+	border-radius: 5px;
+	position: absolute;
+	top: 70%;
+	left: 137px;
+}
+
+.popup_un{
+	height: 230px;
+	width: 275px;
+	background: white;
+	position: absolute;
+	top: 0px;
+	left: 50px;
+	border-radius: 10px;
+	border: 1px solid #B01055;
+
+
+	-webkit-animation-name: displacement;
+	-webkit-animation-duration: .3s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards; 
+}
+
+.opacite_un{
+	width: 375px;
+	height: 667px;
+	margin: 0 auto;
+	background-color: grey;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+
+	-webkit-animation-name: opacite;
+	-webkit-animation-duration: .3s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards; 
+}
+
+		/*ANIMATIONS*/
+@-webkit-keyframes opacite{
+	from{	
+		opacity: 0;
+	}
+	to{
+		opacity: .7;
+	}
+}
+
+@-webkit-keyframes displacement{
+	from{	
+		-webkit-transform:translateY(-250px);
+	}
+	to{
+		-webkit-transform:translateY(100px);
+	}
+}
+
+/*ETOILES DE VOTE 1*/
+.popup_deux{
+	height: 230px;
+	width: 276px;
+	background: white;
+	position: absolute;
+	top: 0px;
+	left: 50px;
+	border-radius: 10px;
+	top: 100px;
+}
+
+.opacite{
+	width: 375px;
+	height: 667px;
+	margin: 0 auto;
+	background-color: grey;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	opacity: .7;
+}
+.buttonvoter{
+	width: 100px;
+	height: 50px;
+	color: black;
+	position: absolute;
+	top: 70%;
+	left: 137px;
+	background: #B01055;
+	border-radius: 5px;
+	color: #fff;
+}
+
+/*ETOILES*/
+.etoilessimple{
+	float: left;
+	background: url(../_images/etoilessimple.jpg) no-repeat;
+	width: 55px;
+	height: 55px;
+	position: relative;
+	top: 40px;
+	left: 55px;
+}
+.etoilessimple__unfocus{
+	background: url(../_images/etoile.jpg) no-repeat;
+}
+
+.etoilessimple__deuxfocus{
+	background: url(../_images/etoile.jpg) no-repeat;
+}
+
+.etoilessimple__troisfocus{
+	background: url(../_images/etoile.jpg) no-repeat;
+}
+
+
+.etoilessimple__2unfocus{
+	background: url(../_images/etoile.jpg) no-repeat;
+}
+
+.etoilessimple__2deuxfocus{
+	background: url(../_images/etoile.jpg) no-repeat;
+}
+
+.etoilessimple__2troisfocus{
+	background: url(../_images/etoile.jpg) no-repeat;
+}
+
+/*ETOILES DE VOTE 2*/
+
+/*DISPARITION DU POPUP*/
+#popup_trois{
+	height: 230px;
+	width: 276px;
+	background: white;
+	border: 1px solid #B01055;
+	position: absolute;
+	top: 0px;
+	left: 50px;
+	border-radius: 10px;
+	top: 100px;
+}
+
+#opacite_trois{
+	width: 375px;
+	height: 667px;
+	margin: 0 auto;
+	background-color: grey;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	opacity: .7;
+}
+#buttonvoter_trois{
+	position: absolute;
+	top: 70%;
+	left: 30%;
+	background: #B01055;
+	border-radius: 5px;
+	color: white;
+}
+.popup_trois{
+	-webkit-animation-name: displacement_trois;
+	-webkit-animation-duration: .5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+
+
+.opacite_trois{
+	
+	-webkit-animation-name: opacite_trois;
+	-webkit-animation-duration: .5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards; 
+}
+
+@-webkit-keyframes opacite_trois{
+	from{	
+		opacity: .7;
+	}
+	to{
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes displacement_trois{
+	from{	
+		-webkit-transform:translateY(0px);
+	}
+	to{
+		-webkit-transform:translateY(-350px);
+	}
+}
+
+/*CHOIX D UNE CATEGORIE*/
+/*CATEGORIES*/
+#categories__un,#categories__deux,#categories__trois,#categories__quatre,#categories__cinq{
+	width: 355px;
+	height: 50px;
+	margin: 0 auto;
+	background: #B01055;
+	border-radius: 5px;
+	position: relative;
+	z-index: 2;
+}
+
+.titre_cat{
+	font-family: sans-serif;
+	padding: 15px;
+	color: white;
+	text-transform: uppercase;
+}
+
+.icone-cat{
+	border-radius: 100%;
+	background-color: white;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 10px;
+
+}
+
+#apparait{
+	position: relative;
+	top: -250px;
+	opacity: 0;
+	z-index: 1;
+}
+
+#resultat__un,#resultat__deux,#resultat__trois{
+	background-color: white;
+	width: 350px;
+	height: 80px;
+	border-bottom: 1px solid #B01055;
+	margin: 0 auto;
+}
+
+.titre_res{
+	font-family: sans-serif;
+	padding: 20px;
+	font-size: 13px;
+
+}
+
+.icone_res{
+	border-radius: 100%;
+	background-color: #B01055;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 10px;
+	margin-top: 20px;
+}
+
+/*AJOUT DES ANIMATION*/
+
+.monte__trois{
+	-webkit-animation-name: monte__trois;
+	-webkit-animation-duration: .5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.monte__deux{
+	-webkit-animation-name: monte__deux;
+	-webkit-animation-duration: .5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.monte__quatre{
+	-webkit-animation-name: monte__quatre;
+	-webkit-animation-duration: .5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.monte__cinq{
+	-webkit-animation-name: monte__cinq;
+	-webkit-animation-duration: .5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.opacite_quatre{
+	-webkit-animation-name: opacite_quatre;
+	-webkit-animation-duration: .5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards; 
+}
+
+.apparait{
+	-webkit-animation-name: apparait;
+	-webkit-animation-duration: .5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards; 
+}
+
+/*ANIMATIONS*/
+@-webkit-keyframes apparait{
+	from{	
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes opacite_quatre{
+	from{	
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes monte__trois{
+	from{	
+		-webkit-transform:translateY(0px);
+	}
+	to{
+		-webkit-transform:translateY(-130px);
+	}
+}
+
+@-webkit-keyframes monte__deux{
+	from{	
+		-webkit-transform:translateY(0px);
+	}
+	to{
+		-webkit-transform:translateY(-65px);
+	}
+}
+
+@-webkit-keyframes monte__quatre{
+	from{	
+		-webkit-transform:translateY(0px);
+	}
+	to{
+		-webkit-transform:translateY(-195px);
+	}
+}
+
+@-webkit-keyframes monte__cinq{
+	from{	
+		-webkit-transform:translateY(0px);
+	}
+	to{
+		-webkit-transform:translateY(-255px);
+	}
+}
+
+
+/*SWITCH ENTRE "DESCRIPTION" et "INFOS PRATIQUES"*/
+.titre_cinq{
+	padding: 0 0 0 110px;
+	font-family: sans-serif;
+}
+.photo{
+	width: 335px;
+	height: 200px;
+	background-color: #B01055;
+	margin: 0 auto;
+	border-radius: 20px;
+}
+
+.boutons{
+	border: 1px solid #B01055;
+	border-radius: 5px 5px 5px 5px;
+	width: 334px;
+	height: 20px;
+	position: relative;
+	top: 20px;
+	left: 20px;
+}
+
+#Bouton1{
+	background-color: #B01055;
+	float: left;
+	width: 167px;
+	height: 20px;
+	opacity: 1;
+}
+
+#Bouton2{
+	background-color: #B01055;
+	float: right;
+	width: 166px;
+	height: 20px;
+	opacity: 0;
+}
+
+#insolite{
+	text-align: center;
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 14px;
+	margin-top: 5px;
+	position: absolute;
+	left: 60px;
+}
+
+#infospratiques{
+	text-align: center;
+	color: #B01055;
+	font-family: sans-serif;
+	font-size: 14px;
+	margin-top: 5px;
+	position: absolute;
+	left: 200px;
+}
+#infos,#infos_deux{
+	width: 335px;
+	position: absolute;
+	left: 20px;
+	top: 340px;
+	font-family: sans-serif;
+}
+
+#infos_deux{
+	opacity: 0;
+}
+/*AJOUT DES ANIMATION*/
+
+.rose{
+	-webkit-animation-name: rose;
+	-webkit-animation-duration: .3s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.blanc{
+	-webkit-animation-name: blanc;
+	-webkit-animation-duration: .3s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.rosedeux{
+	-webkit-animation-name: rosedeux;
+	-webkit-animation-duration: .1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.color-blanc{
+	-webkit-animation-name: color-blanc;
+	-webkit-animation-duration: .1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+.color-rose{
+	-webkit-animation-name: color-rose;
+	-webkit-animation-duration: .1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.apparait_cinq{
+	-webkit-animation-name: apparait_cinq;
+	-webkit-animation-duration: .1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.disparait_cinq{
+	-webkit-animation-name: disparait_cinq;
+	-webkit-animation-duration: .1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+
+/*ANIMATIONS*/
+@-webkit-keyframes rose{
+	from{	
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes color-blanc{
+	from{	
+		color: #B01055;
+	}
+	to{
+		color: #fff;
+	}
+}
+@-webkit-keyframes color-rose{
+	from{	
+		color: #fff;
+	}
+	to{
+		color: #B01055;
+	}
+}
+@-webkit-keyframes blanc{
+	from{	
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
+@-webkit-keyframes rosedeux{
+	from{	
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+@-webkit-keyframes disparait_cinq{
+	from{	
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
+@-webkit-keyframes apparait_cinq{
+	from{	
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+
+
+
+
+
