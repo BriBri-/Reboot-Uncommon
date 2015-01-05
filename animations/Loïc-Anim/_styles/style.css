@@ -1,0 +1,163 @@
+body {
+	font-family: sans-serif;
+	color: #1796e6;
+
+	margin: 0;
+	padding: 0;
+font-family: 'Roboto', sans-serif;
+	background: #fff;
+}
+
+header {
+	text-align: center;
+}
+
+h1 {
+	font-size: 42px;
+	margin: 50px 0;
+	color: #1796e6;
+	font-weight: 400;
+}
+
+section {
+	padding: 50px 0;
+}
+
+.container {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.iphoneFond {
+	background: url(../_img/iphone6.svg);
+	width: 414px;
+	height: 868px;
+	position: relative;
+	display: inline-block;
+}
+
+.iphoneContainer {
+	width: 375px;
+	height: 667px;
+	position: absolute;
+	
+	top: 93px;
+	left: 19px;
+	overflow: hidden;
+}
+
+animation1screen {
+	display: block;
+	overflow: hidden;
+}
+
+.text {
+padding-right: 100px;
+	width: 450px;
+	float: right;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+h2 {
+	margin-top: 95px;
+	font-size: 26px;
+	color: #1796e6;
+	line-height: 1.8;
+}
+
+#screen1 {
+      width: 375px;
+      height: 667px;
+      background: #1796e6;
+      position: relative;
+    }
+    
+    .location {
+      position: absolute;
+      top: 40%;
+      left: 40%;
+    }
+
+ #screen2 {
+      width: 375px;
+      height: 667px;
+      background: #1796e6;
+      position: relative;
+    }
+    
+    .location2 {
+      position: absolute;
+      top: 40%;
+      left: 30%;
+    }
+    
+
+  #screen3 {
+      width: 375px;
+      height: 667px;
+      background: #1796e6;
+      position: relative;
+    }
+    
+#screen3 ul {
+	list-style: none;
+  padding: 0;
+	margin: 0;
+	width: 360px;
+	padding: 5px ;
+}
+
+
+#screen3 li {
+	margin-bottom: 5px;
+}
+#screen3 a {
+	background: black;
+	display: block;
+	padding: 10px;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+    #screen4 {
+      width: 375px;
+      height: 667px;
+      background: #1796e6;
+      position: relative;
+
+    }
+    #star {
+      top: 200px;
+      left: 150px;
+      position: absolute;
+    }
+
+
+    #screen5 {
+      width: 375px;
+      height: 667px;
+      background: #1796e6;
+      position: relative;
+
+    }
+    #star2 {
+      top: 200px;
+      left: 50px;
+      position: absolute;
+    }
+    
+    .form {
+    width: 250px;
+      height: 35px;
+      background: pink;
+    }
+    
+        .form2 {
+              width: 250px;
+      height: 35px;
+      background: pink;
+margin-top: 40px;
+    }
+    
